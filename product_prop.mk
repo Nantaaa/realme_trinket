@@ -33,6 +33,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
+# ZRAM
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=16 \
