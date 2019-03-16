@@ -30,6 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false \
     debug.hwui.renderer=skiavk \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
