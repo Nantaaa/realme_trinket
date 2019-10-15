@@ -195,3 +195,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Doze
+PRODUCT_PACKAGES += \
+    RealmeParts
