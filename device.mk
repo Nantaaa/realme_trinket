@@ -111,6 +111,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl.r5x
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     GCamGo
