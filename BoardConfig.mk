@@ -136,7 +136,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # RIL
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 DISABLE_RILD_OEM_HOOK := true
 
 # Sepolicy
