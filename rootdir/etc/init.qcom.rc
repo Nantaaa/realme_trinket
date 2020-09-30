@@ -1,9 +1,6 @@
 on init
    mount none /dev/null /vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc bind
 
-on post-fs-data
-    write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
-
 on boot
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
