@@ -145,7 +145,7 @@ DISABLE_RILD_OEM_HOOK := true
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private \
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
 
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
