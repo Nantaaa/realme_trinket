@@ -21,6 +21,17 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.qcom.bluetooth.enable.splita2d=false \
     vendor.audio.feature.a2dp_offload.enable = false
 
+# Dex2oat
+PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.image-dex2oat-filter=quicken \
+    dalvik.vm.image-dex2oat-threads=8 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.dex2oat-filter=quicken \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.stagefright.omx_default_rank.sw-audio=16 \
