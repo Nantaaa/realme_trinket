@@ -66,6 +66,17 @@ product/lib64/vendor.display.color@1.1.so
 product/lib64/vendor.display.color@1.2.so
 product/lib64/vendor.display.color@1.3.so
 
+# Fingerprint firmware
+oppo_product/vendor/firmware/f_1511.b00:product/vendor_overlay/29/firmware/f_1511.b00
+oppo_product/vendor/firmware/f_1511.b01:product/vendor_overlay/29/firmware/f_1511.b01
+oppo_product/vendor/firmware/f_1511.b02:product/vendor_overlay/29/firmware/f_1511.b02 
+oppo_product/vendor/firmware/f_1511.b03:product/vendor_overlay/29/firmware/f_1511.b03
+oppo_product/vendor/firmware/f_1511.b04:product/vendor_overlay/29/firmware/f_1511.b04
+oppo_product/vendor/firmware/f_1511.b05:product/vendor_overlay/29/firmware/f_1511.b05
+oppo_product/vendor/firmware/f_1511.b06:product/vendor_overlay/29/firmware/f_1511.b06
+oppo_product/vendor/firmware/f_1511.b07:product/vendor_overlay/29/firmware/f_1511.b07
+oppo_product/vendor/firmware/f_1511.mdt:product/vendor_overlay/29/firmware/f_1511.mdt
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
