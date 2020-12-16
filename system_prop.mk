@@ -82,6 +82,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.enable.mag_filter=true
 
+# Shutdown
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.shutdown_timeout=2
+
 # Subsystem ramdump
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
