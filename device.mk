@@ -168,26 +168,25 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    qti_telephony_utils.xml
 
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
-
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
-
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# PA common QTI components configuration
+TARGET_BOARD_PLATFORM := trinket
+
+TARGET_COMMON_QTI_COMPONENTS := \
+    display \
+    telephony \
+    wfd
+
+-include device/qcom/common/common.mk
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
