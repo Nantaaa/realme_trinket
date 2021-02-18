@@ -36,6 +36,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1
 
+# LMKD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram=false \
+    ro.lmk.log_stats=true
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.thumbnail.prefer_hw_codecs=true \
