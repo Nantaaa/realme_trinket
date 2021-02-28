@@ -12,7 +12,7 @@ on init
     write /sys/class/drm/card0/device/idle_encoder_mask 1
     write /sys/class/drm/card0/device/idle_timeout_ms 100
 
-on late-fs
+on post-fs
     start surfaceflinger
     start bootanim
     start vendor.hwcomposer-2-4
