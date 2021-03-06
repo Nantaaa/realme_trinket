@@ -7,6 +7,9 @@
 /firmware(/.*)?          u:object_r:firmware_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
 
+# Fingerprint
+/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.oppo_r5x                   u:object_r:hal_fingerprint_r5x_exec:s0
+
 # HALs
 /system/bin/hw/android\.hardware\.power-service\.r5x                               u:object_r:hal_power_pixel_exec:s0
 
