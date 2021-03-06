@@ -5,6 +5,9 @@ on post-fs-data
     write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
 
 on boot
+    # DT2W
+    chown system system /proc/touchpanel/double_tap_enable
+    chown 0660 /proc/touchpanel/double_tap_enable
 
     # Disable edge limit control interface
     write /proc/touchpanel/oppo_tp_limit_enable 0
