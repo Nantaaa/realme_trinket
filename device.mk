@@ -9,8 +9,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-PRODUCT_CHARACTERISTICS := nosdcard
-
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/realme/realme_trinket/realme_trinket-vendor.mk)
 
