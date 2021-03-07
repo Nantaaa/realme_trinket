@@ -109,12 +109,6 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
 
-# Perf
-product/lib64/vendor.qti.hardware.iop@2.0.so
-product/lib64/vendor.qti.hardware.perf@2.0.so
-product/lib/vendor.qti.hardware.iop@2.0.so
-product/lib/vendor.qti.hardware.perf@2.0.so
-
 # RIL
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml|445f784e5cf0a21717dadb36a3f17af75a3af02f
