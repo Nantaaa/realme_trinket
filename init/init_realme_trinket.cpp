@@ -55,10 +55,22 @@ void load_RMX1911() {
     property_override("ro.build.description", "redfin-user 11 RQ2A.210305.006 7119741 release-keys");
 }
 
+void load_RMX1925() {
+    property_override("ro.product.model", "Realme 5s");
+    property_override("ro.build.product", "RMX1925");
+    property_override("ro.product.device", "RMX1925");
+    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+}
+
 void load_RMX1927() {
-    property_override("ro.product.model", "Realme 5S");
+    property_override("ro.product.model", "Realme 5 NFC");
     property_override("ro.build.product", "RMX1927");
     property_override("ro.product.device", "RMX1927");
+    property_override("persist.sys.nfc.disPowerSave", "1");
+    property_override("persist.sys.nfc.default", "on");
+    property_override("persist.sys.nfc.aid_overflow", "true");
+    property_override("ro.product.cuptsm", "OPPO|ESE|01|02");
+    property_override("persist.sys.nfc.antenna_area", "bottom");
     property_override("ro.build.description", "redfin-user 11 RQ2A.210305.006 7119741 release-keys");
 }
 
@@ -95,9 +107,20 @@ void vendor_load_properties() {
     std::ifstream infile("/proc/oppoVersion/prjVersion");
     std::string prjName;
     getline(infile, prjName);
+    std::ifstream fin;
+    std::string buf;
+    fin.open("/proc/cmdline");
+    while (std::getline(fin, buf, ' '))
+      if (buf.find("board_id") != std::string::npos)
+          break;
+    fin.close();
 
     if (prjName == "19631") {
-        load_RMX1911();
+        if (buf.find("S86125AA1") != std::string::npos) {
+            load_RMX1925();
+        } else {
+            load_RMX1911();
+        }
     } else if (prjName == "19632") {
         load_RMX1927();
     } else if (prjName == "19743") {
