@@ -279,6 +279,10 @@
          The user is forbidden from setting the brightness above this level. -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
 
+    <!-- Flag indicating whether we should enable the automatic brightness.
+         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <bool name="config_automatic_brightness_available">true</bool>
+
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
