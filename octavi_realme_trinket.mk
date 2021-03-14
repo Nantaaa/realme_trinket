@@ -6,7 +6,7 @@
 
 # Inherit some common device stuff.
 
-$(call inherit-product, device/realme/r5x/device.mk)
+$(call inherit-product, device/realme/realme_trinket/device.mk)
 
 
 # Inherit some common octavi stuff.
@@ -23,9 +23,9 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
-PRODUCT_DEVICE := r5x
+PRODUCT_DEVICE := realme_trinket
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := octavi_r5x
+PRODUCT_NAME := octavi_realme_trinket
 
 BUILD_FINGERPRINT := "unknown-user-10-QKQ1.200209.002--release-keys"
 

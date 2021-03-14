@@ -19,9 +19,9 @@ cc_library {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.r5x",
+    name: "android.hardware.power-service.realme_trinket",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.r5x.rc"],
+    init_rc: ["aidl/android.hardware.power-service.realme_trinket.rc"],
     vintf_fragments: ["aidl/android.hardware.power-service.realme.xml"],
     shared_libs: [
         "android.hardware.power-ndk_platform",

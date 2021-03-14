@@ -1,4 +1,4 @@
-service vendor.power-hal-aidl /system/bin/hw/android.hardware.power-service.r5x
+service vendor.power-hal-aidl /system/bin/hw/android.hardware.power-service.realme_trinket
     class hal
     user root
     group system

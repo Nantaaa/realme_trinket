@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=r5x
+DEVICE=realme_trinket
 VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2019

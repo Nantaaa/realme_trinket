@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_r5x.mk
+    $(LOCAL_DIR)/octavi_realme_trinket.mk
 
